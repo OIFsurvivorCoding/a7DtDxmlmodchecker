@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "xmlmodchecker": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\Programming\\C# programs\\7dtdModConflicts\\7dtdxmlconflictfinder\\7DtDxmlcodechecker\\7DtDxmlmodchecker"
+    }
+  }
+}

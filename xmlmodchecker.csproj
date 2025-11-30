@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject></StartupObject>
+    <ApplicationIcon>7dtd logo400x400.ico</ApplicationIcon>
+    <PackageIcon></PackageIcon>
+	<AssemblyName></AssemblyName>
+	  <AutAuthors>
+		  <Authors xmlns="http://schemas.microsoft.com/developer/msbuild/2003">Author: OIFsurvivor</Authors>
+	  </AutAuthors>
+	   <Company>Author: OIFsurvivor</Company>
+    <Product>7DtD XML Mod Checker</Product>
+	  <Copyright>Copyright: ©2025 OIFsurvivor</Copyright>
+    <Description>This program will search thought your mod folder for 7 Days to Die and find conflicting XML files.</Description>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+	  <BVerVersion>
+		  <Version xmlns="http://schemas.microsoft.com/developer/msbuild/2003">1.0.0.0</Version>
+	  </BVerVersion>
+	  
+		
+	 <IncludeSymbols>False</IncludeSymbols>
+	  
+		
+	 <Title>7DtD XML Mod Checker</Title>
+	  
+		
+	 <PackageLicenseFile>Copyright.txt</PackageLicenseFile>
+	  
+		
+	 <NeutralLanguage>en-US</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="7dtd logo400x400.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Copyright.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
